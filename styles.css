@@ -48,6 +48,7 @@ h1 {
     align-items: center;
     margin: 10px;
     max-width: 640px; /* Adjust this value according to your desired maximum width */
+    max-width: 31%;
 }
 
 #image-container {
