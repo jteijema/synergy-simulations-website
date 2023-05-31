@@ -4,6 +4,14 @@ body {
     padding: 20px;
 }
 
+#titlebox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
 h1 {
     margin-bottom: 20px;
 }
@@ -11,8 +19,6 @@ h1 {
 #subtitle {
     font-size: 1.1em;
     color: #555;
-    margin-top: -10px;
-    margin-bottom: 30px;
 }
 
 #content {
@@ -112,11 +118,12 @@ h1 {
 }
 
 footer {
-    position: static;
+    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
     text-align: center;
     box-sizing: border-box;
 }
