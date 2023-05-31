@@ -7,6 +7,18 @@ The Docker image is hosted on Docker Hub, and can be found at [jteijema/asreview
 
 To get started with this project, fire up a browser and go to http://jteijema.github.io/synergy-simulations.
 
+
+### Local website
+
+The website is currently hosted by GitHub. However, with an eye on persistency, the website is also easily hosted locally. To run the website locally, clone this repository and run the following command:
+
+```bash
+python -m http.server 8080
+```
+
+The website is now available at http://localhost:8080.
+
+
 ## Citation
 All future work using these results should either cite the persistent file storage location or the following paper:
 
