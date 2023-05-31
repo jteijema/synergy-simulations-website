@@ -7,4 +7,4 @@ To get started with this project, fire up a browser and go to http://jteijema.gi
 
 ## License
 
-This project is licensed under the terms of the APACHE 2.0 license. See the LICENSE.md file for details.
+This project is licensed under the terms of the Apache-2.0 license. See the LICENSE.md file for details.
