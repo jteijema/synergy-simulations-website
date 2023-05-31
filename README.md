@@ -5,7 +5,7 @@ The Docker image is hosted on Docker Hub, and can be found at [jteijema/asreview
 
 ## Quick Start
 
-To get started with this project, fire up a browser and go to http://jteijema.github.io/synergy-simulations.
+To get started with this project, fire up a browser and go to http://jteijema.github.io/synergy-simulations-website.
 
 
 ### Local website
