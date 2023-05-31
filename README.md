@@ -30,4 +30,4 @@ All future work using these results should either cite the persistent file stora
 
 ## License
 
-This project is licensed under the terms of the Apache-2.0 license. See the LICENSE.md file for details.
+This project is licensed under the terms of the Attribution 4.0 International (CC BY 4.0). See the LICENSE.md file for details.
