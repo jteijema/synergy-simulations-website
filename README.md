@@ -23,7 +23,7 @@ The website is now available at http://localhost:8080.
 All future work using these results should either cite the persistent file storage location or the following paper:
 
 ```
-@article{teijema20223synergy,
+@article{teijema2023synergy,
   title={Expansive Empirical Examination: Large-Scale Simulation Study of Active Learning Strategies in Systematic Reviews},
   author={Jelle Jasper Teijema, Jonathan de Bruin, and Rens van de Schoot},
 ```
