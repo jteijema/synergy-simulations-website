@@ -1,5 +1,5 @@
 # synergy-simulations
-![img](https://zenodo.org/badge/DOI/10.5281/zenodo.10841480.svg)
+[![img](https://zenodo.org/badge/DOI/10.5281/zenodo.10841480.svg)](https://doi.org/10.5281/zenodo.10841480)
 
 This repo serves as the output webserver for the ASReview Simulation Project, which uses a Docker image to run large-scale ASReview simulations. This repository only hosts the webserver, which is used to display the results of the simulations.The images are hosted on a separate persistent host, together with the simulation results. 
 
