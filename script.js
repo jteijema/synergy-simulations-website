@@ -22,7 +22,7 @@ const lightboxImg = lightbox.querySelector("img");
         });
 
         const subtitle = document.getElementById("subtitle");
-        subtitle.textContent = `Displaying ${folderList.length} (from total 338) plots made from ${simulationsCountData.count} simulations.`;
+        subtitle.textContent = `Displaying ${folderList.length} (from total ${13*25}) plots made from ${simulationsCountData.count} simulations.`;
 
         setSelectedGroupFromHash(keysList, groupedFolderList, document.createElement("li"));
 
