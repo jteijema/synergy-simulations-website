@@ -10,7 +10,7 @@ To get started with this project, fire up a browser and go to http://jteijema.gi
 
 ### Local website
 
-The website is currently hosted by GitHub. However, with an eye on persistency, the website is also easily hosted locally. To run the website locally, clone this repository and run the following command:
+The website is currently hosted by GitHub. However, with an eye on persistency, the website is also easily hosted locally. To run the website locally, clone this repository and run the following command in the root directory:
 
 ```bash
 python -m http.server 8080
