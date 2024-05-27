@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synergy Simulations</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="titlebox">
+        <h1>Simulation Gallery</h1>
+        <a href="https://doi.org/10.5281/zenodo.10841480">
+            <img src="https://zenodo.org/badge/DOI/10.5281/zenodo.10841480.svg"
+            alt="Zenodo" width="220px">
+        </a>
+        <a href="index.html">Dataset Performance</a>
+        <p id="subtitle">Displaying 92 model combinations made from 2300 simulations.</p>
+    </div>
+    <div id="content">
+        <div id="folders" style="display: flex; flex-direction: column;">
+            <ul id="models">
+                <li onclick="displayImage('./performance_images/adaboost_figure.png')">AdaBoost</li>
+                <li onclick="displayImage('./performance_images/knn_figure.png')">KNN</li>
+                <li onclick="displayImage('./performance_images/logistic_figure.png')">Logistic Regression</li>
+                <li onclick="displayImage('./performance_images/nb_figure.png')">Naive Bayes</li>
+                <li onclick="displayImage('./performance_images/nn-2-layer_figure.png')">2-Layer Neural Network</li>
+                <li onclick="displayImage('./performance_images/rf_figure.png')">Random Forest</li>
+                <li onclick="displayImage('./performance_images/svm_figure.png')">SVM</li>
+                <li onclick="displayImage('./performance_images/xgboost_figure.png')">XGBoost</li>
+            </ul>
+            <ul id="models">
+                <li onclick="displayImage('./performance_images/doc2vec_figure.png')">Doc2Vec</li>
+                <li onclick="displayImage('./performance_images/fasttext_figure.png')">FastText</li>
+                <li onclick="displayImage('./performance_images/ft-sbert_figure.png')">Mean Pooled SBERT</li>
+                <li onclick="displayImage('./performance_images/labse_figure.png')">LaBSE</li>
+                <li onclick="displayImage('./performance_images/multilingual_figure.png')">Multilingual Embeddings</li>
+                <li onclick="displayImage('./performance_images/mxbai_figure.png')">MXBAI Embeddings</li>
+                <li onclick="displayImage('./performance_images/onehot_figure.png')">OneHot encoding</li>
+                <li onclick="displayImage('./performance_images/sbert_figure.png')">SBERT</li>
+                <li onclick="displayImage('./performance_images/scaled-doc2vec_figure.png')">Scaled Doc2Vec</li>
+                <li onclick="displayImage('./performance_images/spacy_figure.png')">SpaCy Embeddings</li>
+                <li onclick="displayImage('./performance_images/tfidf_figure.png')">TF-IDF</li>
+                <li onclick="displayImage('./performance_images/wide-doc2vec_figure.png')">Wide Doc2Vec</li>
+                <li onclick="displayImage('./performance_images/word2vec_figure.png')">Word2Vec</li>
+            </ul>
+        </div>
+        <div id="image-container">
+            <p>Select a model to display the image</p>
+        </div>
+    </div>
+    <footer>
+        <p>
+            The simulations shown on this webpage are for educational purposes. For more information, visit <a href="https://github.com/jteijema/synergy-simulations-website" target="_blank">our GitHub page</a>.<br>
+            Website and simulations under development by <a href="https://github.com/jteijema" target="_blank">Jelle Teijema</a>.<br>
+            This website is protected under an Attribution 4.0 International (CC BY 4.0) <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">license</a>.
+        </p>
+    </footer>
+    <script>
+        function displayImage(imagePath) {
+            const imageContainer = document.getElementById('image-container');
+            imageContainer.innerHTML = '<img src="' + imagePath + '" alt="Image from selected category" class="displayed-image">';
+        }
+    </script>
+</body>
+</html>
