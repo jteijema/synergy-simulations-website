@@ -20,7 +20,7 @@
     <div id="content">
         <div id="folders" style="display: flex; flex-direction: column;">
             <ul id="models">
-                <li onclick="displayImage('./performance_images/adaboost_figure.png')">AdaBoost</li>
+                <li onclick="displayImage('./performance_images/adaboost_figure.png'); window.location.hash = 'adaboost'">AdaBoost</li>
                 <li onclick="displayImage('./performance_images/knn_figure.png')">KNN</li>
                 <li onclick="displayImage('./performance_images/logistic_figure.png')">Logistic Regression</li>
                 <li onclick="displayImage('./performance_images/nb_figure.png')">Naive Bayes</li>
@@ -60,7 +60,20 @@
         function displayImage(imagePath) {
             const imageContainer = document.getElementById('image-container');
             imageContainer.innerHTML = '<img src="' + imagePath + '" alt="Image from selected category" class="displayed-image">';
+            const modelName = imagePath.match(/([^\/]+)_figure\.png$/)[1];
+            window.location.hash = modelName;
         }
+    
+        function checkHashAndDisplayImage() {
+            const hash = window.location.hash.replace('#', '');
+            if (hash) {
+                const imagePath = './performance_images/' + hash + '_figure.png';
+                displayImage(imagePath);
+            }
+        }
+
+        window.onload = checkHashAndDisplayImage;
+        window.onhashchange = checkHashAndDisplayImage;
     </script>
 </body>
 </html>
