@@ -20,31 +20,31 @@
     <div id="content">
         <div id="folders" style="display: flex; flex-direction: column;">
             <ul id="models">
-                <h3>Classifiers</h3>
-                <li onclick="displayImage('./performance_images/adaboost_figure.png'); window.location.hash = 'adaboost'">AdaBoost</li>
-                <li onclick="displayImage('./performance_images/knn_figure.png')">KNN</li>
-                <li onclick="displayImage('./performance_images/logistic_figure.png')">Logistic Regression</li>
-                <li onclick="displayImage('./performance_images/nb_figure.png')">Naive Bayes</li>
-                <li onclick="displayImage('./performance_images/nn-2-layer_figure.png')">2-Layer Neural Network</li>
-                <li onclick="displayImage('./performance_images/rf_figure.png')">Random Forest</li>
-                <li onclick="displayImage('./performance_images/svm_figure.png')">SVM</li>
-                <li onclick="displayImage('./performance_images/xgboost_figure.png')">XGBoost</li>
+                <h3 style="margin-top: 0;">Classifiers</h3>
+                <li onclick="displayImage('./performance_images/adaboost_figure.svg'); window.location.hash = 'adaboost'">AdaBoost</li>
+                <li onclick="displayImage('./performance_images/knn_figure.svg')">KNN</li>
+                <li onclick="displayImage('./performance_images/logistic_figure.svg')">Logistic Regression</li>
+                <li onclick="displayImage('./performance_images/nb_figure.svg')">Naive Bayes</li>
+                <li onclick="displayImage('./performance_images/nn-2-layer_figure.svg')">2-Layer Neural Network</li>
+                <li onclick="displayImage('./performance_images/rf_figure.svg')">Random Forest</li>
+                <li onclick="displayImage('./performance_images/svm_figure.svg')">SVM</li>
+                <li onclick="displayImage('./performance_images/xgboost_figure.svg')">XGBoost</li>
             </ul>
             <ul id="models">
-                <h3>Feature Extractors</h3>
-                <li onclick="displayImage('./performance_images/doc2vec_figure.png')">Doc2Vec</li>
-                <li onclick="displayImage('./performance_images/fasttext_figure.png')">FastText</li>
-                <li onclick="displayImage('./performance_images/ft-sbert_figure.png')">Mean Pooled SBERT</li>
-                <li onclick="displayImage('./performance_images/labse_figure.png')">LaBSE</li>
-                <li onclick="displayImage('./performance_images/multilingual_figure.png')">Multilingual Embeddings</li>
-                <li onclick="displayImage('./performance_images/mxbai_figure.png')">MXBAI Embeddings</li>
-                <li onclick="displayImage('./performance_images/onehot_figure.png')">OneHot encoding</li>
-                <li onclick="displayImage('./performance_images/sbert_figure.png')">SBERT</li>
-                <li onclick="displayImage('./performance_images/scaled-doc2vec_figure.png')">Scaled Doc2Vec</li>
-                <li onclick="displayImage('./performance_images/spacy_figure.png')">SpaCy Embeddings</li>
-                <li onclick="displayImage('./performance_images/tfidf_figure.png')">TF-IDF</li>
-                <li onclick="displayImage('./performance_images/wide-doc2vec_figure.png')">Wide Doc2Vec</li>
-                <li onclick="displayImage('./performance_images/word2vec_figure.png')">Word2Vec</li>
+                <h3 style="margin-top: 0;">Feature Extractors</h3>
+                <li onclick="displayImage('./performance_images/doc2vec_figure.svg')">Doc2Vec</li>
+                <li onclick="displayImage('./performance_images/fasttext_figure.svg')">FastText</li>
+                <li onclick="displayImage('./performance_images/ft-sbert_figure.svg')">Mean Pooled SBERT</li>
+                <li onclick="displayImage('./performance_images/labse_figure.svg')">LaBSE</li>
+                <li onclick="displayImage('./performance_images/multilingual_figure.svg')">Multilingual Embeddings</li>
+                <li onclick="displayImage('./performance_images/mxbai_figure.svg')">MXBAI Embeddings</li>
+                <li onclick="displayImage('./performance_images/onehot_figure.svg')">OneHot encoding</li>
+                <li onclick="displayImage('./performance_images/sbert_figure.svg')">SBERT</li>
+                <li onclick="displayImage('./performance_images/scaled-doc2vec_figure.svg')">Scaled Doc2Vec</li>
+                <li onclick="displayImage('./performance_images/spacy_figure.svg')">SpaCy Embeddings</li>
+                <li onclick="displayImage('./performance_images/tfidf_figure.svg')">TF-IDF</li>
+                <li onclick="displayImage('./performance_images/wide-doc2vec_figure.svg')">Wide Doc2Vec</li>
+                <li onclick="displayImage('./performance_images/word2vec_figure.svg')">Word2Vec</li>
             </ul>
         </div>
         <div id="image-container" style="align-items:center ">
@@ -62,14 +62,14 @@
         function displayImage(imagePath) {
             const imageContainer = document.getElementById('image-container');
             imageContainer.innerHTML = '<img src="' + imagePath + '" alt="Image from selected category" class="displayed-image">';
-            const modelName = imagePath.match(/([^\/]+)_figure\.png$/)[1];
+            const modelName = imagePath.match(/([^\/]+)_figure\.svg$/)[1];
             window.location.hash = modelName;
         }
     
         function checkHashAndDisplayImage() {
             const hash = window.location.hash.replace('#', '');
             if (hash) {
-                const imagePath = './performance_images/' + hash + '_figure.png';
+                const imagePath = './performance_images/' + hash + '_figure.svg';
                 displayImage(imagePath);
             }
         }
