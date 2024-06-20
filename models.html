@@ -21,31 +21,37 @@
         <div id="folders" style="display: flex; flex-direction: column;">
             <ul id="models">
                 <h3 style="margin-top: 0;">Classifiers</h3>
-                <li onclick="displayImage('./performance_images/adaboost_figure.svg'); window.location.hash = 'adaboost'">AdaBoost</li>
-                <li onclick="displayImage('./performance_images/knn_figure.svg')">KNN</li>
-                <li onclick="displayImage('./performance_images/logistic_figure.svg')">Logistic Regression</li>
-                <li onclick="displayImage('./performance_images/nb_figure.svg')">Naive Bayes</li>
-                <li onclick="displayImage('./performance_images/nn-2-layer_figure.svg')">2-Layer Neural Network</li>
-                <li onclick="displayImage('./performance_images/rf_figure.svg')">Random Forest</li>
-                <li onclick="displayImage('./performance_images/svm_figure.svg')">SVM</li>
-                <li onclick="displayImage('./performance_images/xgboost_figure.svg')">XGBoost</li>
+                <li onclick="displayImage('./performance_images/adaboost_figure.svg'); window.location.hash = 'adaboost'">AdaBoost 🐟</li>
+                <li onclick="displayImage('./performance_images/knn_figure.svg')">KNN ⁉️</li>
+                <li onclick="displayImage('./performance_images/logistic_figure.svg')">Logistic Regression ⭐</li>
+                <li onclick="displayImage('./performance_images/nb_figure.svg')">Naive Bayes ⭐</li>
+                <li onclick="displayImage('./performance_images/nn-2-layer_figure.svg')">2-Layer Neural Network 🐟</li>
+                <li onclick="displayImage('./performance_images/rf_figure.svg')">Random Forest ⭐</li>
+                <li onclick="displayImage('./performance_images/svm_figure.svg')">SVM ⭐</li>
+                <li onclick="displayImage('./performance_images/xgboost_figure.svg')">XGBoost 🐟</li>
             </ul>
             <ul id="models">
                 <h3 style="margin-top: 0;">Feature Extractors</h3>
                 <li onclick="displayImage('./performance_images/doc2vec_figure.svg')">Doc2Vec</li>
-                <li onclick="displayImage('./performance_images/fasttext_figure.svg')">FastText</li>
+                <li onclick="displayImage('./performance_images/fasttext_figure.svg')">FastText ⁉️</li>
                 <li onclick="displayImage('./performance_images/ft-sbert_figure.svg')">Mean Pooled SBERT</li>
-                <li onclick="displayImage('./performance_images/labse_figure.svg')">LaBSE</li>
-                <li onclick="displayImage('./performance_images/multilingual_figure.svg')">Multilingual Embeddings</li>
-                <li onclick="displayImage('./performance_images/mxbai_figure.svg')">MXBAI Embeddings</li>
-                <li onclick="displayImage('./performance_images/onehot_figure.svg')">OneHot encoding</li>
-                <li onclick="displayImage('./performance_images/sbert_figure.svg')">SBERT</li>
-                <li onclick="displayImage('./performance_images/scaled-doc2vec_figure.svg')">Scaled Doc2Vec</li>
-                <li onclick="displayImage('./performance_images/spacy_figure.svg')">SpaCy Embeddings</li>
-                <li onclick="displayImage('./performance_images/tfidf_figure.svg')">TF-IDF</li>
+                <li onclick="displayImage('./performance_images/labse_figure.svg')">LaBSE 🐟</li>
+                <li onclick="displayImage('./performance_images/multilingual_figure.svg')">Multilingual Embeddings ⁉️</li>
+                <li onclick="displayImage('./performance_images/mxbai_figure.svg')">MXBAI Embeddings 🐟</li>
+                <li onclick="displayImage('./performance_images/onehot_figure.svg')">OneHot encoding ⭐</li>
+                <li onclick="displayImage('./performance_images/sbert_figure.svg')">SBERT 🐟</li>
+                <li onclick="displayImage('./performance_images/scaled-doc2vec_figure.svg')">Scaled Doc2Vec 🐟</li>
+                <li onclick="displayImage('./performance_images/spacy_figure.svg')">SpaCy Embeddings ⁉️</li>
+                <li onclick="displayImage('./performance_images/tfidf_figure.svg')">TF-IDF ⭐</li>
                 <li onclick="displayImage('./performance_images/wide-doc2vec_figure.svg')">Wide Doc2Vec</li>
-                <li onclick="displayImage('./performance_images/word2vec_figure.svg')">Word2Vec</li>
+                <li onclick="displayImage('./performance_images/word2vec_figure.svg')">Word2Vec ⁉️</li>
             </ul>
+            <div id="models">
+                <h3>Legend:</h3>
+                <li style="text-decoration: none;"><a href="https://github.com/asreview/asreview-nemo" style="text-decoration: none;" target="_blank">🐟 - NeMo package models</a></li>
+                <li style="text-decoration: none;"><a href="https://asreview.readthedocs.io/en/latest/reference.html#models" style="text-decoration: none;" target="_blank">⭐ - ASReview models</a></li>
+                <li style="text-decoration: none;"><a href="https://github.com/jteijema/ASReview-experimental-models" style="text-decoration: none;" target="_blank">⁉️ - Experimental models</a></li>
+            </div>
         </div>
         <div id="image-container" style="align-items:center ">
             <p>Select a model to display the image</p>
