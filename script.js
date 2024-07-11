@@ -22,7 +22,7 @@ const lightboxImg = lightbox.querySelector("img");
         });
 
         const subtitle = document.getElementById("subtitle");
-        subtitle.textContent = `Displaying ${folderList.length} plots made from ${simulationsCountData.count} simulations.`;
+        subtitle.textContent = `Displaying ${folderList.length} plots made from ${simulationsCountData.count} simulations. (27001 - 65 Walker runs)`;
 
         setSelectedGroupFromHash(keysList, groupedFolderList, document.createElement("li"));
 
